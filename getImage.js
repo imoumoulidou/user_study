@@ -21,7 +21,7 @@ function updateImage(props){
 }
 
 function buildHtml(questionId){
-    let questionDiv = document.getElementById(questionId);
+    let questionDiv = document.getElementById(questionId).getElementsByClassName('QuestionText')[0];
 
     console.log(questionDiv)
 
