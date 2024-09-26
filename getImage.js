@@ -89,6 +89,8 @@ function buildHtml(questionId){
     row.append(leftColumn);
     row.append(rightColumn);
 
+    console.log(row)
+
     questionDiv.append(row);
     
 
