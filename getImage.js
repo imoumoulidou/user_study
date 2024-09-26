@@ -6,7 +6,7 @@ function getImage(props){
         return `https://imoumoulidou.github.io/user_study/${props.dataset}/sampling_methods/${props.method}/${props.method}_${props.size}_alpha_${props.alpha}_marker_${props.marker}.png`
     }
     else {
-        return `https://imoumoulidou.github.io/user_study/${props.dataset}/sampling_methods/${props.method}/${props.method}_${props.size}_alpha_${props.alpha}_marker_${props.marker}.png`
+        return `https://imoumoulidou.github.io/user_study/${props.dataset}/original_data/${props.dataset}_alpha_${props.alpha}_marker_${props.marker}.png`
     }
 
 }
