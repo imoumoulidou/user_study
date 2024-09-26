@@ -96,8 +96,8 @@ function buildHtml(questionId){
 
 }
 
-function setupQuestion(){
-    buildHtml(this.questionId);
+function setupQuestion(questionId){
+    buildHtml(questionId);
 	
 	let orig_alpha = '1.0', sample_alpha = '1.0';
 	let dataset = 'hidden_corr';
