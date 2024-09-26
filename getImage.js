@@ -1,3 +1,4 @@
+const methods = ['random', 'max_min', 'density_biased', 'vas', 'blue_noise', 'perception_aware'];
 
 function getImage(props){
 
