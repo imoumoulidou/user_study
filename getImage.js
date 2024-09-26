@@ -15,13 +15,15 @@ function updateImage(props){
     // props: {dataset, method, size, alpha, marker, isSample, id}
     let filepath = getImage(props);
 	
-	console.log(filepath);
+	// console.log(filepath);
 	
 	document.getElementById(props.id).src = filepath;
 }
 
 function buildHtml(questionId){
     let questionDiv = document.getElementById(questionId);
+
+    console.log(questionDiv)
 
     let row = document.createElement('div');
     row.className = 'row';
