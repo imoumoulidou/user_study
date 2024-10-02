@@ -21,7 +21,7 @@ function updateImage(props){
 	document.getElementById(props.id).src = filepath;
 }
 
-function buildHtml(questionId){
+function buildQuestion1(questionId){
     let questionDiv = document.getElementById(questionId).getElementsByClassName('QuestionText')[0];
 
     console.log(questionDiv)
@@ -93,12 +93,13 @@ function buildHtml(questionId){
     console.log(row)
 
     questionDiv.append(row);
-    
 
 }
 
-function setupQuestion(questionId){
-    buildHtml(questionId);
+
+function setupQuestion(questionNum, questionId){
+    if(questionNum == 1) buildQuestion1(questionId);
+    else buildQuestion1(questionId)
 	
 	let orig_alpha = '1.0', sample_alpha = '1.0';
 	let dataset = 'hidden_corr';
@@ -142,3 +143,4 @@ function setupQuestion(questionId){
 	console.log(this.questionId);
 
 }
+
