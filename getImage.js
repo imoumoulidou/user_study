@@ -44,6 +44,7 @@ function buildQuestion1(questionId){
     orig_slider.min = 1;
     orig_slider.max = 10;
     orig_slider.step = 3;
+    orig_slider.value = 10;
 
     let orig_text = document.createElement('p');
     orig_text.id = 'orig_alpha_text';
@@ -103,7 +104,7 @@ function setupQuestion(questionNum, questionId){
 	
 	let orig_alpha = '1.0', sample_alpha = '1.0';
 	let dataset = 'hidden_corr';
-	let marker_size = 4;
+	let marker_size = 8;
 	let sample_size = 1898;
 	
 	updateImage({
