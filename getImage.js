@@ -104,7 +104,7 @@ function setupQuestion(questionNum, questionId){
 	
 	let orig_alpha = '1.0', sample_alpha = '1.0';
 	let dataset = 'hidden_corr';
-	let marker_size = 8;
+	let marker_size = 16;
 	let sample_size = 1898;
 	
 	updateImage({
