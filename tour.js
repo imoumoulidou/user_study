@@ -16,11 +16,11 @@ function createTour(steps){
       exitOnEsc: false
     })
   
-    startTour(tour, steps[type])
+    startTour(steps)
   }
   
   
-  function startTour(tour,steps){
+  function startTour(steps){
     for (i = 0; i < steps.length; i++) {
       btns = [];
       // no back button at the start
