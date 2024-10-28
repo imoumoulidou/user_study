@@ -1,4 +1,4 @@
-const methods = ['random', 'max_min', 'density_biased', 'vas', 'blue_noise', 'perception_aware'];
+// const methods = ['random', 'max_min', 'density_biased', 'vas', 'blue_noise', 'perception_aware'];
 
 function getImage(props){
 
@@ -24,7 +24,7 @@ function updateImage(props){
 function buildQuestion1(questionId){
     let questionDiv = document.getElementById(questionId).getElementsByClassName('QuestionText')[0];
 
-    console.log(questionDiv)
+    // console.log(questionDiv)
 
     let row = document.createElement('div');
     row.className = 'row';
@@ -91,7 +91,7 @@ function buildQuestion1(questionId){
     row.append(leftColumn);
     row.append(rightColumn);
 
-    console.log(row)
+    // console.log(row)
 
     questionDiv.append(row);
 
@@ -100,7 +100,7 @@ function buildQuestion1(questionId){
 function buildQuestion2(questionId){
     let questionDiv = document.getElementById(questionId).getElementsByClassName('QuestionText')[0];
 
-    console.log(questionDiv)
+    // console.log(questionDiv)
 
     let row = document.createElement('div');
     row.className = 'row';
@@ -167,7 +167,7 @@ function buildQuestion2(questionId){
     row.append(leftColumn);
     row.append(rightColumn);
 
-    console.log(row)
+    // console.log(row)
 
     questionDiv.append(row);
 
@@ -204,7 +204,7 @@ function setupQuestion(questionNum, questionId){
 	}
 	
 	document.getElementById('orig_alpha_slider').oninput = function(){
-		console.log(this.value);
+		// console.log(this.value);
 		
 		updateImage({
 			isSample: false,
@@ -217,7 +217,7 @@ function setupQuestion(questionNum, questionId){
 		document.getElementById('orig_alpha_text').innerHTML = 'Transparency: ' + (this.value / 10).toFixed(1);
 	}
 	
-	console.log(this.questionId);
+	// console.log(this.questionId);
 
 }
 
