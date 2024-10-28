@@ -40,7 +40,6 @@ function createTour(steps){
           classes: 'shepherd-button-primary '+steps[i].class+(steps[i].disabled ? ' disabled-button': ''),
           disabled: steps[i].disabled,
           action: function () {
-            this.disabled = false;
 
             return tour.next();
           }
