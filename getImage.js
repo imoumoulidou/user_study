@@ -174,50 +174,50 @@ function buildQuestion2(questionId){
 }
 
 
-function setupQuestion(questionNum, questionId){
-    if(questionNum == 1) buildQuestion1(questionId);
-    else buildQuestion1(questionId)
+// function setupQuestion(questionNum, questionId){
+//     if(questionNum == 1) buildQuestion1(questionId);
+//     else buildQuestion1(questionId)
 	
-	let orig_alpha = '1.0', sample_alpha = '1.0';
-	let dataset = 'hidden_corr';
-	let marker_size = 16;
-	let sample_size = 1898;
+// 	let orig_alpha = '1.0', sample_alpha = '1.0';
+// 	let dataset = 'hidden_corr';
+// 	let marker_size = 16;
+// 	let sample_size = 1898;
 	
-	updateImage({
-		isSample: false,
-		dataset: dataset,
-		alpha: orig_alpha,
-		marker: marker_size,
-		id: 'orig'
-	});
+// 	updateImage({
+// 		isSample: false,
+// 		dataset: dataset,
+// 		alpha: orig_alpha,
+// 		marker: marker_size,
+// 		id: 'orig'
+// 	});
 	
-	for(let i = 1; i <= 6; i++){
-		updateImage({
-			isSample: true,
-			dataset: dataset,
-			method: methods[i-1],
-			size: sample_size,
-			alpha: sample_alpha,
-			marker: marker_size,
-			id: 'sample_' + i
-		})
-	}
+// 	for(let i = 1; i <= 6; i++){
+// 		updateImage({
+// 			isSample: true,
+// 			dataset: dataset,
+// 			method: methods[i-1],
+// 			size: sample_size,
+// 			alpha: sample_alpha,
+// 			marker: marker_size,
+// 			id: 'sample_' + i
+// 		})
+// 	}
 	
-	document.getElementById('orig_alpha_slider').oninput = function(){
-		// console.log(this.value);
+// 	document.getElementById('orig_alpha_slider').oninput = function(){
+// 		// console.log(this.value);
 		
-		updateImage({
-			isSample: false,
-			dataset: dataset,
-			alpha: (this.value / 10).toFixed(1),
-			marker: marker_size,
-			id: 'orig'
-		});
+// 		updateImage({
+// 			isSample: false,
+// 			dataset: dataset,
+// 			alpha: (this.value / 10).toFixed(1),
+// 			marker: marker_size,
+// 			id: 'orig'
+// 		});
 		
-		document.getElementById('orig_alpha_text').innerHTML = 'Transparency: ' + (this.value / 10).toFixed(1);
-	}
+// 		document.getElementById('orig_alpha_text').innerHTML = 'Transparency: ' + (this.value / 10).toFixed(1);
+// 	}
 	
-	// console.log(this.questionId);
+// 	// console.log(this.questionId);
 
-}
+// }
 
