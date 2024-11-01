@@ -78,7 +78,7 @@ function runTour(){
     createTour([
         {
             "id": "#image",
-            "location": "bottom",
+            "location": "left",
             "title": "Transparency Slider",
             "text": "Use the slider.",
             "class": "main-vis-step",
@@ -86,7 +86,7 @@ function runTour(){
         },
         {
             "id": "#image",
-            "location": "bottom",
+            "location": "left",
             "title": "Transparency Slider",
             "text": "Great! Now close the window to proceed.",
             "class": "main-vis-step",
