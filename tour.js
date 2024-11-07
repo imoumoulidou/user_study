@@ -80,7 +80,7 @@ function runTour(){
             "id": "#image",
             "location": "bottom",
             "title": "Transparency Slider",
-            "text": "Use the slider.",
+            "text": "Interact with the slider to see diffent views of the data.",
             "class": "main-vis-step",
             "disabled": true
         },
