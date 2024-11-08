@@ -24,35 +24,14 @@ function createTour(steps){
     for (i = 0; i < steps.length; i++) {
       btns = [];
       // no back button at the start
-      if (i > 0) {
-        btns.push({
-          text: 'Back',
-          classes: 'shepherd-button-secondary',
-          action: function () {
-            return tour.back();
-          }
-        });
-      }
-      // no next button on last step
-      if (i != (steps.length - 1)) {
-        btns.push({
-          text: 'Next',
-          classes: 'shepherd-button-primary '+steps[i].class+(steps[i].disabled ? ' disabled-button': ''),
-          disabled: steps[i].disabled,
-          action: function () {
-
-            return tour.next();
-          }
-        });
-      } else {
-        btns.push({
-          text: 'Close',
-          classes: 'shepherd-button-primary',
-          action: function () {
-            return tour.hide();
-          }
-        });
-      }
+      btns.push({
+        text: 'Next',
+        classes: 'shepherd-button-primary '+steps[i].class+(steps[i].disabled ? ' disabled-button': ''),
+        disabled: steps[i].disabled,
+        action: function () {
+          return tour.hide();
+        }
+      });
   
       let step = {
         id: 'step-'+i,
@@ -80,17 +59,9 @@ function runTour(){
             "id": "#image",
             "location": "bottom",
             "title": "Transparency Slider",
-            "text": "Use the slider.",
+            "text": "Use the slider to continue.",
             "class": "main-vis-step",
             "disabled": true
-        },
-        {
-            "id": "#image",
-            "location": "bottom",
-            "title": "Transparency Slider",
-            "text": "Great! Now close the window to proceed.",
-            "class": "main-vis-step",
-            "disabled": false
         }
     ])
 }
