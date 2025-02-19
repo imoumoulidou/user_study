@@ -7,7 +7,7 @@ function getImage(props){
         return `https://imoumoulidou.github.io/user_study/${props.dataset}/sampling_methods/${props.method}/${props.method}_${props.size}_alpha_${props.alpha}_marker_${props.marker}.png`
     }
     else {
-        return `https://imoumoulidou.github.io/user_study/${props.dataset}/original_data/${props.dataset}_alpha_${props.alpha}_marker_${props.marker}_frame.png`
+        return `https://imoumoulidou.github.io/user_study/${props.dataset}/original_data/${props.dataset}_alpha_${props.alpha}_marker_${props.marker}.png`
     }
 
 }
@@ -16,7 +16,7 @@ function updateImage(props){
     // props: {dataset, method, size, alpha, marker, isSample, id}
     let filepath = getImage(props);
 	
-	console.log(filepath);
+	//console.log(filepath);
 	
 	document.getElementById(props.id).src = filepath;
 }
